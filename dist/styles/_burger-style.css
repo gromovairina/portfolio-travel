@@ -1,0 +1,80 @@
+.menu-closet {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  .burger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: block;
+    justify-self: center;
+  }
+  .burger span,
+  .burger::after,
+  .burger::before {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .burger span {
+    top: 25px;
+  }
+  .burger::after,
+  .burger::before {
+    content: '';
+  }
+  .burger::after {
+    bottom: 5px;
+  }
+  .burger::before {
+    top: 7px;
+  }
+  .burger.open span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .burger.open::before {
+    transform: rotate(45deg);
+    top: 16px;
+    transition: 0.4s ease;
+  }
+  .burger.open::after {
+    transform: rotate(-45deg);
+    top: 16px;
+    transition: 0.4s ease;
+  }
+  .menu-closet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding: 30px;
+    left: 0;
+    top: 100px;
+    z-index: 50;
+    overflow-y: auto;
+    min-width: 60%;
+    height: calc(100vh - 100px);
+    background: linear-gradient(rgb(22, 60, 31) 0%, rgb(120, 158, 133) 100%);
+    font-family: url(https://fonts.googleapis.com/css?family=Laila:700);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    transform: translateX(-100%);
+    transition: all 0.6s ease-in-out;
+  }
+  .menu-item {
+    padding: 20px 0;
+  }
+  .menu-closet a {
+    color: white;
+  }
+
+  .menu-closet.open-menu {
+    transform: none;
+  }
+}

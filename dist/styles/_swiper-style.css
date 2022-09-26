@@ -1,0 +1,19 @@
+.swiper {
+  text-align: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(9, 170, 76);
+  font-size: 80px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: aliceblue;
+}
