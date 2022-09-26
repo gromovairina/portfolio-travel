@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/header/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/header/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/header/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/header/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/header/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Туризм</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <nav class="nav">
+        <div class="nav__logo">
+            <a href="#header">
+              Название
+                
+            </a>
+         
+        </div>
+          <ul class="nav__menu nav__menu-closet">
+            <a href="#service"><li class="nav__menu-item">Услуги</li></a>
+            <a href="#advantages"><li class="nav__menu-item">О&nbspкомпании</li></a>
+            <a href="#destinations"><li class="nav__menu-item">Направления</li></a>
+          </ul>
+          <ul class="menu-closet">
+            <a href="#service"><li class="menu-item">Услуги</li></a>
+            <a href="#advantages"><li class="menu-item">О&nbspкомпании</li></a>
+            <a href="#destinations"><li class="menu-item">Направления</li></a>
+          </ul>
+          <div class="burger"><span></span></div>
+          <div class="nav__tel">
+            <a href="tel:8(800)1234567">8(800)1234567</a>
+                
+            
+          </div>
+          <div class="nav__icons">
+            <a href="skype:Skype_User?cal" target="blank">
+              <img src="images/header/skype.png" alt="Значок скайп" />
+            </a>
+            <a href="https://whatsaps.ru/" target="blank"><img src="images/header/whatsapp.png" alt="Значок ватсапп" /></a>
+            </a>
+            <a href="https://vk.com/id*." target="blank"><img src="images/header/vk.png" alt="Значок вК" /></a>
+          </div>
+        </nav>
+
+        <div class="header__inner">
+          <h1 class="header__title-inner">
+            <div class="header__title-item-1">
+              Воплотите мечту
+            </div>
+            <div class="header__title-item-2">
+              об идеальном путешествии
+            </div>
+          </h1>
+          <div class="header__title-text">
+            <div class="header__title-text-1">
+            Наша задача - сделать клиентов счастливыми. Обратившись к нам, вы совершите лучшее путешествие в своей жизни.
+            </div>
+
+            <div class="header__title-text-2">
+              Полный спектр туристических услуг.
+            </div>
+          </div>
+          <button class="header__button button">Свяжитесь с нами</button>
+        </div>
+
+        <div class="header__overflow"></div>
+       
+      </header>
+      
+     
+  
+      <!--модальное окно с формой-->
+      <div class="popup">
+        <form class="modal-form" id="form" autocomplete="off">
+             <label class="input-signature">Ваше имя
+             <input
+                   class="input-text"
+                     type="text"
+                     name="name"
+                   id="name"
+                     tabindex="1"
+                     autocomplete="off"
+                     required
+                   />
+                 </label>
+                 <label class="input-signature">Ваш телефон
+             <input
+                     type="tel"
+                     name="tel"
+                     tabindex="2"
+                     class="input-text"
+                     id="tel"
+                     autocomplete="off"
+                     required
+                   />
+                 </label>
+             <label class="input-signature">Ваш e-mail
+             <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     tabindex="3"
+                     class="input-text"
+                     autocomplete="off"
+                     required
+                   />
+                 </label>
+                 <label class="input-signature">Сообщение
+                   <textarea
+                     name="message"
+                     id="message"
+                     type="text"
+                     tabindex="4"
+                     class="input-text"
+                   ></textarea>
+                 </label>
+         <button type="submit" class="button-input">Отправить</button>
+           </form>
+           <div class="popup-close">X</div>
+         <div class="form-overlay"></div>
+       </div>
+    
+      <main class="main">
+        <section class="service" id="service">
+          
+              <div class="service__inner">
+                <h2 class="service__title title">Услуги</h2>
+                <!--флекс контейнер для колонок-->
+                <div class="service__proposition-row">
+                  
+                  <div class="service__proposition-column">
+                    <div class="service__image">
+                      <img
+                        src="images/service/service-green_img.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="service__proposition">Бронирование билетов</div>
+                    <div class="service__proposition-text">
+                     Мы бронируем билеты вашего пункта назначения.
+                    </div>
+                  </div>
+                  <div class="service__proposition-column">
+                    <div class="service__image">
+                      <img src="images/service/service-hotel.png" alt="" />
+                    </div>
+                    <div class="service__proposition">Бронирование гостиницы</div>
+                    <div class="service__proposition-text">
+                      Вы можете забронировать отель по своему бюджету.
+                    </div>
+                  </div>
+                  <div class="service__proposition-column">
+                    <div class="service__image">
+                      <img src="images/service/service-arrow.png" alt="" />
+                    </div>
+                    <div class="service__proposition">Планирование тура</div>
+                    <div class="service__proposition-text">
+                      Вместе мы составим план вашего идеального путешествия.
+                      Вместе мы составим план вашего идеального путешествия.
+                      Вместе мы составим план вашего идеального путешествия.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          
+        </section>
+        <section class="advantages" id="advantages">
+          
+            <div class="advantages__inner">
+              
+                <div class="advantages__title title">
+                  Исключительный сервис
+                </div>
+                <div class="advantages__subtitle">
+                  Мы хотим, чтобы путешествие принесло радость.
+                  <br>
+                  Все заботы возьмем на себя, вам останется только отдыхать.
+                </div>
+                <div class="advantages__row">
+                  <div class="advantages__items advantages__items--grid1">
+                    <div class="advantages__image">
+                      <img
+                        src="images/service/service-dater.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="advantages__progress">15+</div>
+                    <div class="advantages__text">лет в туристическом бизнесе</div>
+                  </div>
+
+                  <div class="advantages__items advantages__items--grid2">
+                    <div class="advantages__image">
+                      <img
+                        src="images/service/service-sticks.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="advantages__progress">15k+</div>
+                    <div class="advantages__text">довольных путешественников</div>
+                  </div>
+                  <div class="advantages__items advantages__items--grid3">
+                    <div class="advantages__image">
+                      <img
+                        src="images/service/servise-coord.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="advantages__progress">650+</div>
+                    <div class="advantages__text">локаций в разных регионах планеты</div>
+                  </div>
+                  <div class="advantages__items advantages__items--grid4">
+                    <div class="advantages__image">
+                      <img
+                        src="images/service/service-history.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="advantages__progress">2k+</div>
+                    <div class="advantages__text">истории о путешествиях</div>
+                  </div>
+                </div>
+              
+            </div>
+          
+        </section>
+        <section class="destinations" id="destinations">
+            <div class="destinations__inner">
+              <div class="destinations__title title">
+                Популярные направления
+              </div>
+              <div class="destinations__row">
+            
+                  <!--регион1-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura1.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Таиланд</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region1">Подробнее</button>
+                      </div>
+                    </div>
+                 
+                 
+                  <!--регион2-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura2.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Индонезия</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region2">Подробнее</button>
+                      </div>
+                  </div>
+                  <!--регион3-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura3.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Новая Зеландия</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region3">Подробнее</button>
+                      </div>
+                    </div>
+               
+              
+                
+                  <!--регион4-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura1.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Турция</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region4">Подробнее</button>
+                      </div>
+                  </div>
+                 
+                  <!--регион5-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura2.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Япония</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region5">Подробнее</button>
+                      </div>
+                  </div>
+                  <!--регион6-->
+                  <div class="destinations__region">
+                    <div class="destinations__image">
+                      <img src="images/distinations/natura3.webp" alt="Фото региона" />
+                    </div>
+                    <div class="destinations__country">Шри-Ланка</div>
+                  
+                    <div class="destinations__arrow">
+                    
+                      <button class="destinations__button" data-path="Region6">Подробнее</button>
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+        </section>
+        
+       <section class="region-modal">
+          <!--Начало модалок по странам-->
+          <!--Регион1-->
+          
+          <div class="destinations-popup-bcg" data-target="Region1">
+            <div class="modal">
+              <div class="modal__title">Таиланд</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura1.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  Сколько лететь: 9 часов из Москвы, 7 часов 20 минут из Новосибирск. Разница с Москвой: +4 часа.
+                  
+                  Когда сезон: отдыхать в Таиланде можно круглый год, даже в сезон дождей не льет сутки напролет. Но самое комфортное время для отдыха — с ноября по апрель.
+                  
+                  Средняя температура в сезон: +30 °C.
+                  
+                  Валюта: тайский бат, 1 THB⁣ (2 Р).
+                  
+                  Язык: тайский.
+                </p>
+                <p>
+                  В Таиланде можно находиться 30 дней без визы: в аэропорту просто ставят штамп о пребывании.
+Если хотите провести в Таиланде больше времени, придется оформлять визу. Ее можно получить в консульстве Королевства Таиланд в Москве и Санкт-Петербурге или через визовые центры. Стоимость туристической визы на 60 дней — 40 $⁣ (2452 Р), сбор визового центра — около 1500 Р. Такую визу можно продлить еще на 30 дней, не выезжая из страны. Для этого нужно обратиться в иммиграционный центр в Таиланде и заплатить дополнительно 1900 THB⁣ (3202 Р).
+                Визовая политика в Таиланде достаточно строгая. За просрочку штампа или визы на один день взимается штраф 500 THB⁣ (843 Р). Еще королевство борется с незаконными мигрантами, которые нелегально работают в Таиланде, поэтому повторно продлить визу бывает проблематично. Миграционное законодательство постоянно ужесточается. Особенно внимательны к тем, кто покидает Таиланд на один или два дня, чтобы продлить визу, то есть фактически там живет.
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <!--Регион2-->
+          <div class="destinations-popup-bcg" data-target="Region2">
+            <div class="modal">
+              <div class="modal__title">Индонезия</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura2.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  Индонезия — это невероятная для жителя северного полушария экзотика. Сюда едут, чтобы оказаться в сказке, среди пальм, песка, улыбчивых людей, ярких храмов, сочных фруктов и пьянящего морского бриза. В Индонезию приезжают молодежные компании — снимают виллу и живут несколько месяцев, наслаждаясь климатом и атмосферой острова; здесь любят отдыхать те, кому по душе йога и спа; тут всегда много серферов, потому что ловить волну на Бали можно круглый год.
+
+                  Бали, да и вся Индонезия в целом — очень гостеприимное место. Вкусная еда, радушие  жителей, множество удивительных и прекрасных уголков, которые стоит посетить — все это ждет вас в Индонезии.
+                </p>
+                <p>
+                  Индонезия находится в Юго-Восточной Азии. Остров Бали, куда чаще всего прилетают отдыхать туристы, входит в состав Малых Зондских островов и соседствует с островами Ява и Ломбок.
+
+                  Из Москвы на остров Бали летают чартерные рейсы и приземляются в аэропорту Денпасар. Время в пути — от 12 до 13 часов, возможна пересадка (чаще всего в Таиланде или Сингапуре).
+                  
+                  Бали — довольно большой остров, однако все курорты и аэропорт находятся в южной оконечности острова, поэтому трансфер из аэропорта в отель будет коротким — от 30 до 60 минут.
+                  
+                  Стоит отметить, что время в пути из аэропорта в отель зависит от того, сколько отелей в маршруте автобуса и дорожной ситуации.
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+          <!--Регион3-->
+          <div class="destinations-popup-bcg" data-target="Region3">
+            <div class="modal">
+              <div class="modal__title">Новая Зеландия</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura3.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  В Новой Зеландии красивейшие побережья и пляжи, однако именно ради пляжного отдыха нет смысла отправляться настолько далеко. Сюда едут с целью посещения долины гейзеров, ледников, водопадов, пещер и других достопримечательностей природного происхождения, удивительным образом сконцентрировавшихся в одном регионе. Каждый, кто отдает предпочтение активному туризму, найдет для себя развлечения по вкусу: от размеренного знакомства с разнообразием местной флоры и фауны, до дайвинга и покорения заснеженных вершин.
+                </p>
+                <p>
+                  Лучший период года для посещения Новой Зеландии зависит от цели визита. Если хочется насладиться красотами природы, то для этого идеально подходит новозеландское лето (с декабря по февраль). Если активное катание на лыжах и сноуборде — зима (с июня по август). Для тех, кто хочет отдохнуть с минимальными тратами следует выбирать плечевой (когда температура все еще комфортна) и низкий сезон. Они длятся с марта по апрель и с мая по август, соответственно. В период новозеландской зимы только услуги горнолыжных курортов предоставляются по полной стоимости.
+                </p>
+              </div>
+            
+            </div>
+          </div>
+           <!--Регион4-->
+           <div class="destinations-popup-bcg" data-target="Region4">
+            <div class="modal">
+              <div class="modal__title">Турция</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura3.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  В Новой Зеландии красивейшие побережья и пляжи, однако именно ради пляжного отдыха нет смысла отправляться настолько далеко. Сюда едут с целью посещения долины гейзеров, ледников, водопадов, пещер и других достопримечательностей природного происхождения, удивительным образом сконцентрировавшихся в одном регионе. Каждый, кто отдает предпочтение активному туризму, найдет для себя развлечения по вкусу: от размеренного знакомства с разнообразием местной флоры и фауны, до дайвинга и покорения заснеженных вершин.
+                </p>
+                <p>
+                  Лучший период года для посещения Новой Зеландии зависит от цели визита. Если хочется насладиться красотами природы, то для этого идеально подходит новозеландское лето (с декабря по февраль). Если активное катание на лыжах и сноуборде — зима (с июня по август). Для тех, кто хочет отдохнуть с минимальными тратами следует выбирать плечевой (когда температура все еще комфортна) и низкий сезон. Они длятся с марта по апрель и с мая по август, соответственно. В период новозеландской зимы только услуги горнолыжных курортов предоставляются по полной стоимости.
+                </p>
+              </div>
+            
+            </div>
+          </div>
+           <!--Регион5-->
+           <div class="destinations-popup-bcg" data-target="Region5">
+            <div class="modal">
+              <div class="modal__title">Япония</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura3.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  В Новой Зеландии красивейшие побережья и пляжи, однако именно ради пляжного отдыха нет смысла отправляться настолько далеко. Сюда едут с целью посещения долины гейзеров, ледников, водопадов, пещер и других достопримечательностей природного происхождения, удивительным образом сконцентрировавшихся в одном регионе. Каждый, кто отдает предпочтение активному туризму, найдет для себя развлечения по вкусу: от размеренного знакомства с разнообразием местной флоры и фауны, до дайвинга и покорения заснеженных вершин.
+                </p>
+                <p>
+                  Лучший период года для посещения Новой Зеландии зависит от цели визита. Если хочется насладиться красотами природы, то для этого идеально подходит новозеландское лето (с декабря по февраль). Если активное катание на лыжах и сноуборде — зима (с июня по август). Для тех, кто хочет отдохнуть с минимальными тратами следует выбирать плечевой (когда температура все еще комфортна) и низкий сезон. Они длятся с марта по апрель и с мая по август, соответственно. В период новозеландской зимы только услуги горнолыжных курортов предоставляются по полной стоимости.
+                </p>
+              </div>
+            
+            </div>
+          </div>
+           <!--Регион6-->
+           <div class="destinations-popup-bcg" data-target="Region6">
+            <div class="modal">
+              <div class="modal__title">Шри-Ланка</div>
+              <div class="modal__image">
+                <img src="images/distinations/natura3.webp" alt="Фото региона" />
+              </div>
+              <div class="modal__text">
+                <p>
+                  В Новой Зеландии красивейшие побережья и пляжи, однако именно ради пляжного отдыха нет смысла отправляться настолько далеко. Сюда едут с целью посещения долины гейзеров, ледников, водопадов, пещер и других достопримечательностей природного происхождения, удивительным образом сконцентрировавшихся в одном регионе. Каждый, кто отдает предпочтение активному туризму, найдет для себя развлечения по вкусу: от размеренного знакомства с разнообразием местной флоры и фауны, до дайвинга и покорения заснеженных вершин.
+                </p>
+                <p>
+                  Лучший период года для посещения Новой Зеландии зависит от цели визита. Если хочется насладиться красотами природы, то для этого идеально подходит новозеландское лето (с декабря по февраль). Если активное катание на лыжах и сноуборде — зима (с июня по август). Для тех, кто хочет отдохнуть с минимальными тратами следует выбирать плечевой (когда температура все еще комфортна) и низкий сезон. Они длятся с марта по апрель и с мая по август, соответственно. В период новозеландской зимы только услуги горнолыжных курортов предоставляются по полной стоимости.
+                </p>
+              </div>
+            
+            </div>
+          </div>
+          <div class="destinations-close">X</div>
+          <div class="destinations-overlay"></div>
+          
+          <!--конец модалок по странам-->
+       </section>
+       <section class="packages">
+          <div class="packages__inner">
+            <div class="packages__title title">Пакетные туры</div>
+            <div class="packages__buttons-inner">
+              <button class="packages__section button-active" data-path="one">Горячее</button>
+              <button class="packages__section" data-path="two">Россия</button>
+              <button class="packages__section" data-path="three">Южная&nbspАзия</button>
+              <button class="packages__section" data-path="four">Австралия</button>
+              <button class="packages__section" data-path="five">Европа</button>
+              <button class="packages__section" data-path="six">Турция</button>
+            </div>
+            <!--начало контейтера1Горячее-->
+          <div class="packages__container-inner container-active" data-target="one">
+              
+                <!--карточка1-->
+                <div class="packages__region">
+                  <div class="packages__region-image"><img src="images/location/1container/location-img1.webp" alt="Фото Индонезия"></div>
+                  <div class="packages__region-proposition">
+                    <div class="packages__region-days">3 дня, 2 ночи</div>
+        <div class="packages__region-price">	
+          от 50000 с человека</div>
+                  </div>
+              <div class="packages__region-location">
+                 <div class="packages__location-title">Индонезия</div>
+                      Суматра, Калимантан, Сулавеси, Новая Гвинея, Ява — острова, овеянные романтикой путешествий, имеют свое очарование, свою красоту и культуру. Но самый популярный остров Индонезии — знаменитый Бали. Это шикарный курорт, где есть храмы и ночные клубы, самые роскошные отели и неописуемо красивая природа.</p></div>
+                    
+                 <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Индонезия</div>
+           </div>
+
+
+             
+          <!--карточка2-->
+          <div class="packages__region">
+            <div class="packages__region-image"><img src="images/location/1container/location-img2.webp" alt="Фото Индонезия"></div>
+            <div class="packages__region-proposition">
+              <div class="packages__region-days">3 дня, 2 ночи</div>
+  <div class="packages__region-price">	
+    от 50000 с человека</div>
+            </div>
+        <div class="packages__region-location">
+          <div class="packages__location-title">Индонезия</div>
+          Самая популярная и красивая достопримечательность Бали, которая появляется на всех фотографиях из отпуска в Индонезии — храм Танах Лот, стоящий на скалистом острове рядом с берегом. На втором месте по посещаемости тоже храм, Бесаких, «мать всех храмов Бали».</p></div>
+              
+           <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Индонезия</div>
+     </div>
+ <!--карточка 3-->
+          <div class="packages__region">
+            <div class="packages__region-image"><img src="images/location/1container/location-img3.webp" alt="Фото Индонезия"></div>
+            <div class="packages__region-proposition">
+              <div class="packages__region-days">3 дня, 2 ночи</div>
+  <div class="packages__region-price">	
+    от 50000 с человека</div>
+            </div>
+        <div class="packages__region-location">
+          <div class="packages__location-title">Индонезия</div>
+          Нуса-Дуа подойдет для расслабленного отдыха. Пляжи здесь широкие, чистые, белоснежные, а океан бирюзовый. Многие пляжи закреплены за пятизвездочными отелями, которых здесь достаточное количество, на некоторые есть выход только через отель. Городской пляж также имеется, но он не такой привлекательный как у отелей.</p></div>
+              
+           <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Индонезия</div>
+     </div>
+     
+     </div>
+        <!--конец  контейнера 1-->
+        <!--начало контейнера 2Россия-->
+        <div class="packages__container-inner" data-target="two">
+        
+            <!--карточка1-->
+         
+        <div class="packages__region">
+          <div class="packages__region-image"><img src="images/location/2container/natura2.webp" alt="Фото Куршской Косы"></div>
+          <div class="packages__region-proposition">
+            <div class="packages__region-days">3 дня, 2 ночи</div>
+<div class="packages__region-price">	
+  от 50000 с человека</div>
+          </div>
+      <div class="packages__region-location">
+        <div class="packages__location-title">Индонезия</div>
+        Куршская коса — это длинная узкая полоса суши с уникальным ландшафтом, флорой и фауной. Там произрастает около 600 видов растений и насчитывается 296 видов животных, а ещё проходит миграционный путь 150 видов птиц. За потрясающую природу Куршская коса включена в список Всемирного наследия ЮНЕСКО.</p></div>
+            
+         <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Куршская Коса</div>
+   </div>
+          <!--карточка2-->
+         
+        <div class="packages__region">
+          <div class="packages__region-image"><img src="images/location/2container/natura1.webp" alt="Фото Геленжика"></div>
+          <div class="packages__region-proposition">
+            <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+  от 50000 с человека</div>
+          </div>
+      <div class="packages__region-location">
+        <div class="packages__location-title">Индонезия</div>
+        Туристов привлекает не только жаркое лето, но и современная развитая инфраструктура города. Здесь есть гостиницы различного класса, отели европейского уровня, две канатные дороги, аквапарки, дельфинарии, сафари-парк, рестораны, кафе, ночные клубы, а также исторические и природные достопримечательности. Жилье на время отдыха можно найти как эконом-класса, так и элитное с высоким уровнем обслуживания.</p></div>
+            
+         <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Геленжик</div>
+   </div>
+       
+    <!--карточка3-->
+         
+    <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/2container/natura3.webp" alt="Фото Сочи"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 50000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Пляжей в городе очень много, более 100. Все они галечные. Галька бывает крупная и мелкая, но песок здесь не встретишь. Пляжи бывают дикие, закрытые и общественные. Дикие места никак не оборудованы, но здесь намного спокойнее, людей мало. Общественные пляжи бесплатные. На них не всегда найдется свободное место, но здесь есть шезлонги, водные развлечения и другие услуги. Закрытые территории принадлежат пансионатам и санаториям.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Сочи</div>
+</div>
+      
+  
+        
+      
+        </div>
+        <!--конец контейнера 2-->
+         <!--начало контейнера 3Южная Азия-->
+       <div class="packages__container-inner" data-target='three' >
+         
+            <!--карточка1-->
+         
+    <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/3container/borakaj-tailand.webp" alt="Фото пляжа Боракай"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Один из самых популярных островов архипелага — Боракай, живописнейшее место с дивным подводным миром и прекрасным белым пляжем (White Beach). Таких красивых пейзажей и ярких красок как в Боракае нет, наверное, нигде.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Таиланд</div>
+</div>
+  <!--карточка2-->
+         
+    <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/3container/Shri-lanka.webp" alt="Фото Шри-Ланка"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Колоритная страна с чайными плантациями, золотыми пляжами, слоновьими заповедниками и древними храмами — какие мысли? Индия? Нет, это далёкая и экзотичная Шри-Ланка, которая только-только начала набирать обороты в становлении островного туризма.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Шри-Ланка</div>
+</div>
+<!--карточка3-->
+         
+     <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/3container/phuket-tailand.webp" alt="Фото Пхукет"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Пхукет (Koh Phuket) — популярнейший остров-курорт Таиланда, вполне себе доступная экзотика с райскими пляжами и занимательными достопримечательностями. На Пхукете есть и уединённые бухты с живописными видами, и общественные пляжи с барами и спортивными центрами, и прекрасные парки, и водопады, ну и, конечно же, буддийские храмы — главная святыня Таиланда.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Таиланд</div>
+</div>  </div>
+          
+       
+       <!--конец контейнера 3-->
+        <!--начало контейнера 4Австралия-->
+       <div class="packages__container-inner" data-target="four">
+          
+           <!--карточка1-->
+         
+     <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/4container/1sidnej.webp" alt="Фото Сидней"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    На востоке Сидней омывается водами Тихого океана. Берега причудливо изрезаны, в бухтах много уютных местечек для купания или занятий водными видами спорта. Наиболее раскрученным является пляж Бонди Бич: он увековечен во многих фильмах и сериалах. А Эксельсиор, Балморал и Шарк — отличные места для отдыха с детьми. Серфингисты с наслаждением ловят волну на Тамарама Бич.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Австралия</div></div>
+        <!--карточка2-->
+         
+     <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/4container/2Melbourne.webp" alt="Фото Мельбурн"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Этот город уверенно держит звание культурной столицы страны. Здесь регулярно организуются международные выставки, проводятся концерты и спортивные состязания. Именно Мельбурн принимает участников Формулы-1. Поэтому тем, кто выбирает отдых с насыщенной культурной программой, скучно здесь не будет. Но и любители провести долгожданный отпуск на пляже найдут в Мельбурне подходящие условия: здесь расположены многокилометровые песчаные участки.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Австралия</div></div>
+          <!--карточка3-->
+         
+     <div class="packages__region">
+      <div class="packages__region-image"><img src="images/location/4container/3brisben.webp" alt="Фото Брисбен"></div>
+      <div class="packages__region-proposition">
+        <div class="packages__region-days">6 дней 7 ночей</div>
+<div class="packages__region-price">	
+от 80000 с человека</div>
+      </div>
+  <div class="packages__region-location">
+    <div class="packages__location-title">Индонезия</div>
+    Если все-таки захочется поплавать в волнах Тасманова моря, то стоит проехать до устья реки Брисбен на пригородном поезде. В заливе Моретон много песчаных островов, близ которых плавают дельфины и киты. По побережью предлагается совершить прогулку на джипах. Здесь же расположен один из крупнейших винных заводов страны. Экскурсии с дегустацией местных вин пользуются популярностью у гостей города. Посещать Брисбен можно в течение всего года, но самыми лучшими признаются месяцы с октября по апрель.</p></div>
+        
+     <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Австралия</div>
+     </div>
+      
+          
+       </div>
+       <!--конец контейнера 4-->
+           <!--начало контейнера 5Европа-->
+           <div class="packages__container-inner"  data-target="five">
+             <!--карточка1-->
+           
+       <div class="packages__region">
+        <div class="packages__region-image"><img src="images/location/5container/korfu.webp" alt="Фото Корфу"></div>
+        <div class="packages__region-proposition">
+          <div class="packages__region-days">6 дней 7 ночей</div>
+  <div class="packages__region-price">	
+  от 50000 с человека</div>
+        </div>
+    <div class="packages__region-location">
+      <div class="packages__location-title">Индонезия</div>
+      Корфу — самый северный и, пожалуй, самый зеленый из греческих островов. Корфу прозвали «изумрудным островом» то ли за пышную растительность, то ли за зеленые бумажки в кошельках финансистов, которые стабильно приезжают сюда заключать крупные сделки и просто отдыхать на роскошных виллах и яхтах.</p></div>
+          
+       <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Греция</div></div>
+          <!--карточка2-->
+           
+       <div class="packages__region">
+        <div class="packages__region-image"><img src="images/location/5container/portugalija.webp" alt="Фото Португалия"></div>
+        <div class="packages__region-proposition">
+          <div class="packages__region-days">6 дней 7 ночей</div>
+  <div class="packages__region-price">	
+  от 80000 с человека</div>
+        </div>
+    <div class="packages__region-location">
+      <div class="packages__location-title">Индонезия</div>
+      Наиболее популярные курорты Португалии для пляжного отдыха — это Лиссабонская Ривьера, провинция Алгарве, Мадейра и Азорские острова. Все пляжи в стране общественные. На континентальных пляжах — желтый песок, а на Мадейре и Азорских островах — галька, черный вулканический или привозной песок.</p></div>
+          
+       <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Португалия</div></div>
+            <!--карточка3-->
+           
+       <div class="packages__region">
+        <div class="packages__region-image"><img src="images/location/5container/sorrento.webp" alt="Фото Сорренто"></div>
+        <div class="packages__region-proposition">
+          <div class="packages__region-days">6 дней 7 ночей</div>
+  <div class="packages__region-price">	
+  от 80000 с человека</div>
+        </div>
+    <div class="packages__region-location">
+      <div class="packages__location-title">Индонезия</div>
+      Неповторимые пейзаж и, ласкающие волны, чистейший воздух, итальянское гостеприимство – это лишь небольшой перечень достоинств курорта. Здесь без суеты, в полной гармонии с окружением можно насладиться отдыхом.
+
+      Отлично развитая инфраструктура, отменный сервис и удивительное обаяние города делают его очень популярным местом для путешественников со всего мира.</p></div>
+          
+       <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Сорренто</div>
+       </div>
+            
+         </div>
+        <!--конец контейнера 5-->
+             <!--начало контейнера 6Турция-->
+             <div class="packages__container-inner"  data-target="six">
+               <!--карточка1-->
+             
+         <div class="packages__region">
+          <div class="packages__region-image"><img src="images/location/6container/Alanya.webp" alt="Фото Алания"></div>
+          <div class="packages__region-proposition">
+            <div class="packages__region-days">6 дней 7 ночей</div>
+    <div class="packages__region-price">	
+    от 50000 с человека</div>
+          </div>
+      <div class="packages__region-location">
+        <div class="packages__location-title">Индонезия</div>
+        Неподалёку от Антальи расположен небольшой городок Аланья. Самый южный курорт страны гостеприимно встречает туристов своими интересными древними достопримечательностями и природными красотами. Все знаковые привлекательные места находятся в шаговой доступности, что весьма радует туристов.</p></div>
+            
+         <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Алания</div></div>
+            <!--карточка2-->
+             
+         <div class="packages__region">
+          <div class="packages__region-image"><img src="images/location/6container/Antalya.webp" alt="Фото Анталия"></div>
+          <div class="packages__region-proposition">
+            <div class="packages__region-days">6 дней 7 ночей</div>
+    <div class="packages__region-price">	
+    от 80000 с человека</div>
+          </div>
+      <div class="packages__region-location">
+        <div class="packages__location-title">Индонезия</div>
+        Популярнейшим курортом турецкого средиземноморья является город Анталия. Главный морской туристический центр отвечает высоким представлениям об идеальном отдыхе. Курорт славен изумительными пейзажами, великолепными песчаными и мелкогалечными пляжами, развитым гостиничным сервисом, обилием развлекательных центров на любой вкус и культурными достопримечательностями.</p></div>
+            
+         <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Анталия</div></div>
+              <!--карточка3-->
+             
+         <div class="packages__region">
+          <div class="packages__region-image"><img src="images/location/6container/belek.webp" alt="Фото Белек"></div>
+          <div class="packages__region-proposition">
+            <div class="packages__region-days">6 дней 7 ночей</div>
+    <div class="packages__region-price">	
+    от 80000 с человека</div>
+          </div>
+      <div class="packages__region-location">
+        <div class="packages__location-title">Индонезия</div>
+        Сочетание хвойного аромата с морским бризом создаёт благоприятный целебный воздушный коктейль. На широких песчаных пляжах откладывают яйца черепахи, чем подтверждается великолепная экологическая микросреда побережья.
+
+              Гостиницы выстроились в ряд вдоль длинной береговой полосы. Каждый отель располагает обширной зелёной облагороженной территорией. Отдыхающим предоставляют широкий выбор развлечений. Это бассейны с аттракционами, дельфинарий, аквапарк, просторные поля для игры в гольф и верховой езды.</p></div>
+            
+         <div class="packages__region-item"><img src="images/location/location-icon.png" alt="">Турция</div>
+         </div>
+          
+           </div>
+          <!--конец контейнера 6-->
+      
+          <button class="packages__button button">Свяжитесь с нами</button>
+          
+          </div>
+        </section>
+
+      <section class="about">
+        
+         <div class="about__inner">
+            
+              <div class="about__title title">Что о нас говорят</div>
+              
+               
+                  <div class="about__slider swiper">
+                    <div class="swiper-wrapper">
+                      <!--1слайдер-->
+                      <div class="about__slide swiper-slide"> <div class="about__image">
+                        <img src="images/slider_about_us/slide1/thailand.webp" alt="Фото Таиланд">
+                      </div>
+                    
+  
+                    <div class="about__icon">
+  
+                     
+                       <div class="about__icon-image"> <img src="images/slider_about_us/slide1/photo1.png" alt="Фото клиента"></div>
+                        <div class="about__description">Часто путешествую. С удовольствием пользуюсь услугами этой компании. Все делают быстро, четко, оперативно.</div>
+                        <div class="about__name">Кирил Матвеев</div>
+                     </div></div>
+                      <!--2слайдер-->
+        <div class="about__slide swiper-slide"> <div class="about__image">
+          <img src="images/slider_about_us/slide2/mountain.webp" alt="Фото Корфу">
+        </div>
+      
+
+      <div class="about__icon">
+
+       
+         <div class="about__icon-image"> <img src="images/slider_about_us/slide2/photo2.jpg" alt="Фото клиента"></div>
+          <div class="about__description">Спасибо за прекрасный отдых. Благодаря опытным менеджерам, мне пришлось думать лишь о том, чтобы получить масимум впечатлений.</div>
+          <div class="about__name">Сергей Реуцкий</div>
+       </div></div>
+        <!--3слайдер-->
+        <div class="about__slide swiper-slide"> <div class="about__image">
+          <img src="images/slider_about_us/slide3/new-zeland.webp" alt="Фото Новая Зеландия">
+        </div>
+      
+
+      <div class="about__icon">
+
+       
+         <div class="about__icon-image"> <img src="images/slider_about_us/slide3/photo3.jpg" alt="Фото клиента"></div>
+          <div class="about__description">Отдохнула на славу. Привезли, поселили, накормили, свозили на экскурсии. Что еще нужно для счастья? На следующий год - я опять к вам.</div>
+          <div class="about__name">Мария Полуянова</div>
+       </div></div>
+               </div>
+               
+               <div class="swiper-pagination"></div>
+  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>  
+              
+            </div>
+         
+               
+          </div>
+        </section>    
+
+       
+                  
+               
+               
+ </main>
+      <footer class="footer">
+    
+          <div class="footer__inner">
+            <div class="footer__column">
+              <div class="footer__column-logo">Название</div>
+              
+            </div>
+            <div class="footer__column footer__column--2">
+              
+              <ul class="footer__column-list">
+                <li class="footer__column-link" id="service"><a href="#">Услуги</a></li>
+                <li class="footer__column-link" id="advantages"><a href="#">О компании</a></li>
+                <li class="footer__column-link" id="destinations"><a href="#">Направления</a></li>
+                
+              
+              </ul>
+            </div>
+            <div class="footer__column">
+            
+              <ul class="footer__column-list">
+                
+                <li><div class="footer__column-text"> <a href="tel:8(800)1234567">8(800)1234567</a>
+                </div></li>
+              
+              </ul>
+            </div>
+       
+            <div class="footer__column">
+              <div class="footer__icons">
+                <a href="skype:Skype_User?cal" target="blank">
+                  <img src="images/header/skype.png" alt="Значок скайп" />
+                </a>
+                <a href="https://whatsaps.ru/" target="blank"><img src="images/header/whatsapp.png" alt="Значок ватсапп" /></a>
+                </a>
+                <a href="https://vk.com/id*." target="blank"><img src="images/header/vk.png" alt="Значок вК" /></a>
+              </div>
+            </div>
+            
+
+          </div>
+    
+      </footer>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/inputmask.min.js"></script>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+   <script src="scripts/script-plugins.js"></script>
+   <script src="scripts/script-send.js"></script>
+ <script src="scripts/script.js"></script>
+  </body>
+</html>
